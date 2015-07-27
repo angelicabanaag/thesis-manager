@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+	 <h1>Student List</h1>
+    <ul>
+    {% for student in student_list %}
+        <li>{{stud.first_name}} {{stud.last_name}} <a href='/student/edit/(.*)'>edit</a> &nbsp <a href='/delete/(.*)'>delete</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
